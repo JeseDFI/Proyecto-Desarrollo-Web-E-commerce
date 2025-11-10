@@ -1,25 +1,87 @@
 body {
     margin: 0;
     font-family: 'Montserrat',sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(220deg, #171717 10%, #555);
+    box-sizing: border-box;
+    max-width: 100vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+p {
+    width: 100px;
+    margin: auto;
+}
+
+.nav-pagina {
+    display: flex;
+    list-style: none;
+    width: fit-content;
+    height: fit-content;
+    gap: 20px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-pagina li {
+    color: #EDEDED;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.nav-pagina li:hover {
+    color: #bbb;
+    transform: scale(1.04);
+}
+
+.nav-pagina li:active {
+    transform: scale(0.97);
 }
 
 .title-container {
-    border: 2px solid #f04;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding: 15px 0 15px 20px;
+    width: fit-content;
+    transition: all 0.2s;
+}
+
+.title-container:active{
+    transform: scale(0.97);
 }
 
 .title-container h1 {
     margin: 0;
+    color: #EDEDED;
 }
 
 .title-container img {
     width: 50px;
     height: 50px;
+    margin-right: 15px;
 }
 
 .titulo-weight {
-    color: #f04;
+    color: #DA0037;
+}
+
+@media (max-width: 700px) {
+    .title-container h1 {
+        display: none;
+    }
 }
